@@ -1,29 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *
- *  * _isdigit - Check for a digit (0-9)
- *
- *   * @c: Integer holding the character
- *
- *    *
- *
- *     * Return: 1- Digit 0- Not
- *
- *      */
-
-
-
-int _isdigit(int c)
-
+ * print_diagonal - Print diagonal line dependent on the integer n.
+ * @n : The number of lines using '\' characters to use
+ * Return: Void.
+ */
+void print_diagonal(int n)
 {
+	int i;
+	int spaces;
 
-		if (c >= 48 && c <= 57)
+	for (i = 0; i < n; i++)
+	{
+		for (spaces = 0; spaces < i; spaces++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
+		_putchar('\n');
+	}
 
-					return (1);
-
-
-
-			return (0);
-
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
 }
