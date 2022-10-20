@@ -1,29 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *
- *  * _isdigit - Check for a digit (0-9)
- *
- *   * @c: Integer holding the character
- *
- *    *
- *
- *     * Return: 1- Digit 0- Not
- *
- *      */
-
-
-
-int _isdigit(int c)
-
+ * print_line - Print line dependent on the integer n.
+ * @n : The number of '_' characters to use
+ * Return: Void.
+ */
+void print_line(int n)
 {
+	int i;
 
-		if (c >= 48 && c <= 57)
-
-					return (1);
-
-
-
-			return (0);
-
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
 }
