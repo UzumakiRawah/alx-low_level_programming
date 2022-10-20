@@ -1,29 +1,38 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int _putchar(char c);
 
 /**
+ * print_number - like a hello world
  *
- *  * _isdigit - Check for a digit (0-9)
+ * @n: params an integer
  *
- *   * @c: Integer holding the character
- *
- *    *
- *
- *     * Return: 1- Digit 0- Not
- *
- *      */
+ * No return
+ */
 
 
-
-int _isdigit(int c)
-
+void print_number(int n)
 {
 
-		if (c >= 48 && c <= 57)
+	unsigned int n1 = 0;
 
-					return (1);
+	if  (n < 0)
+	{
+		n1 = -n;
+		_putchar('-');
+	}
 
+	else
+	{
+		n1 = n;
+	}
 
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
 
-			return (0);
-
+	_putchar((n1 % 10) + '0');
 }
