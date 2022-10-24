@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 55be03446fd8297c2947b240f8de08c1f74e0da8
 #include "main.h"
 
 
