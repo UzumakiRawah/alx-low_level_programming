@@ -1,29 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
+ * print_numbers - Print numbers between 0 to 9 incl.
  *
- *  * _isdigit - Check for a digit (0-9)
- *
- *   * @c: Integer holding the character
- *
- *    *
- *
- *     * Return: 1- Digit 0- Not
- *
- *      */
-
-
-
-int _isdigit(int c)
-
+ * Return: Void.
+ */
+void print_numbers(void)
 {
+	int i;
 
-		if (c >= 48 && c <= 57)
-
-					return (1);
-
-
-
-			return (0);
-
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+	_putchar('\n');
 }

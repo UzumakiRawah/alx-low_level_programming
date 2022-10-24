@@ -1,29 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
+ * main -  calculate largest prime of 612852475143
  *
- *  * _isdigit - Check for a digit (0-9)
- *
- *   * @c: Integer holding the character
- *
- *    *
- *
- *     * Return: 1- Digit 0- Not
- *
- *      */
+ * Return: Success Always
+ */
 
 
-
-int _isdigit(int c)
-
+int main(void)
 {
+	long int x = 612852475143;
+	long int py;
 
-		if (c >= 48 && c <= 57)
-
-					return (1);
-
-
-
-			return (0);
-
+	for (py = 2; py < x; py++)
+	{
+		if (x % py == 0)
+		{
+			x = x / py;
+		}
+	}
+	printf("%ld\n", py);
+	return (0);
 }
